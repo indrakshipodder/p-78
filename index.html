@@ -1,0 +1,35 @@
+<html>
+<head> 
+<title>Family Book</title>
+</head>
+<body>
+<h1>My Family Book</h1>
+<hr> <hr>
+<img id="family_img" src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/family.jpg">
+<h3 id="one">Our Family Book</h4>
+<button type="button" onclick="family();">Next</button>
+<hr>
+<script>
+var images = [
+"mother.PNG",
+"partha.jpg",
+"nonu.jpg",
+"new photo.png"
+];
+var names = [
+"1. My Mother (Rumpa Das)",
+"2. My Father (Partha Sarathi Podder)",
+"3. My Brother (Indranil Podder)",
+"4. Me (Indrakshi)"
+];
+var i = 0;
+function family() {
+document.getElementById("one").innerHTML=names[i];
+document.getElementById("family_img").src=images[i];
+i++;
+if(i==4){
+    i=0;
+}}
+</script>
+</body>
+</html>
